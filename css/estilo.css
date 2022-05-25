@@ -214,8 +214,9 @@ html {
       max-height: 250px; }
   /*recetas*/
   .tamaño {
-    max-width: 400px;
-    height: auto; }
+    max-width: 300px;
+    height: auto;
+    margin: 10px; }
   .estilo {
     width: 60%;
     margin: 60px auto;

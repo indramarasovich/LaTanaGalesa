@@ -190,7 +190,8 @@ $colores:(
 
     /*recetas*/ 
     .tamaño {
-        @include sizes(400px, auto)
+        @include sizes(300px, auto);
+        margin: 10px;
     }
 
     .estilo {
