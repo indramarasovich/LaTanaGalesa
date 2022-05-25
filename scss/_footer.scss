@@ -1,0 +1,10 @@
+.fondo {
+    background-color: $first-color;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+
+.fondo2 {
+    @extend .fondo;
+    margin-top: 50px;
+}

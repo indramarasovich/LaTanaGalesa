@@ -1,0 +1,30 @@
+.titulo {
+    font-family: $principal-font;
+    background-color: $font-color;
+    
+    h4, h1 {
+        animation-name: a-titulo;
+        animation-duration: 1s;
+    }
+}
+    
+@keyframes a-titulo {
+    from {
+        margin-left: 50%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+    
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .titulo {
+       padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .titulo {
+        padding: 50px;
+    }
+}

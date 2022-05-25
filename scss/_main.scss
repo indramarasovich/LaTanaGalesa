@@ -1,0 +1,221 @@
+/*index*/
+.color2 {
+    background-color: $second-color;
+    padding: 1rem;
+}
+
+.color1 {
+    background-color: $font-color;
+    padding: 30px;
+    &:hover {
+        transform: scale(1.05);
+        transition-duration: 1s;
+    }
+}
+
+.card-title {
+    font-family: $secondary-font !important;
+}
+
+/*desayunos*/
+$colores:(
+    caja1: #74678b52,
+    caja2: #a36f6f71,
+    caja3: #a3866f67,
+    caja4: #6fa38375
+);
+
+@each $nombre, $color in $colores {
+    .#{$nombre}{
+        background-color: $color;
+        justify-content: center;
+
+        & h5 {
+            color: black;
+        }
+        
+        img {
+            border: solid 5px white;
+            padding: 0px !important;
+
+            &:hover {
+                transform: scale(1.05);
+                transition-duration: 1s;
+            }
+        }
+    }
+}
+
+.boton {
+    font-family: $principal-font;
+    width: fit-content;
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    
+    &:hover {
+        background-color: rgb(172, 152, 124);
+    }
+}
+
+/*fiestas*/
+.titulo3 {
+    background-color: rgba(0, 0, 0, 0.562);
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+
+/*recetas*/
+@mixin sizes($width, $height) {
+    max-width: $width;
+    height: $height;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    /*index*/
+    .margen1 {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .titulo2 {
+        font-family: $principal-font;
+        color: black;
+    }
+
+    .borde {
+        border: solid 2px black;
+        margin: 20px;
+    }
+
+    .seccion {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .div-img {
+        padding: 10px;
+
+        img {
+            border-radius: 3% 3% 0% 0%;
+            height: 100%;
+            width: auto;
+            max-height: 250px;
+        }
+    }
+
+    /*recetas*/
+    .tamaño {
+        @include sizes(200px, auto)
+    }
+
+    .estilo {
+        margin: 10px;
+    
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        &:nth-child(1) {
+            background-color:  rgba(149, 212, 162, 0.521);
+        }
+
+        &:nth-child(2) {
+            background-color:  rgba(212, 170, 224, 0.541);
+        }
+
+        &:nth-child(3) {
+            background-color:  rgba(229, 145, 201, 0.555);
+        }
+    }
+
+    .color {
+        background-color: $third-color;
+        color: $font-color;
+        font-family: $secondary-font !important;
+        padding: 10px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    /*index*/
+    .margen1 {
+        margin: 20px 0px;
+        padding: 40px;
+    }
+
+    .titulo2 {
+        font-family: $principal-font;
+        color: black;
+    }
+
+    .borde {
+        margin: 3rem;
+        padding: 3rem;
+        border: solid 2px black;
+    }
+
+    .seccion {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .div-img {
+        margin: auto;
+        padding: 10px;
+
+        img {
+            border-radius: 3% 3% 0% 0%;
+            height: 100%;
+            width: auto;
+            max-height: 250px;
+        }
+    }
+
+    /*recetas*/ 
+    .tamaño {
+        @include sizes(400px, auto)
+    }
+
+    .estilo {
+        width: 60%; 
+        margin: 60px auto;
+        padding: 20px;
+
+        &:nth-child(1) {
+            background-color:  rgba(149, 212, 162, 0.521);
+        }
+
+        &:nth-child(2) {
+            background-color:  rgba(212, 170, 224, 0.541);
+        }
+
+        &:nth-child(3) {
+            background-color:  rgba(229, 145, 201, 0.555);
+        }
+    }
+
+    .color {
+        background-color: $third-color;
+        color: $font-color;
+        font-family: $secondary-font !important;
+        padding: 50px;
+        margin: 0px 50px;
+    }
+}

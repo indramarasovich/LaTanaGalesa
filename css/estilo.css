@@ -1,0 +1,242 @@
+@charset "UTF-8";
+html {
+  font-family: "Ubuntu", sans-serif !important; }
+
+.navbar-light {
+  background-color: #70a873 !important; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .navbar-nav a {
+    animation-name: a-nav;
+    animation-duration: 1s;
+    margin-top: 5px; }
+  @keyframes a-nav {
+    from {
+      margin: 30% 20px 0px; }
+    to {
+      margin-top: 5px; } } }
+
+@media only screen and (min-width: 768px) {
+  .nav-link {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .navbar-nav a {
+    animation-name: a-nav;
+    animation-duration: 2s;
+    padding: 0.5rem 3rem !important; }
+    .navbar-nav a:hover {
+      text-shadow: 1px;
+      transform: scale(1.1);
+      transition-duration: 3s; }
+  @keyframes a-nav {
+    from {
+      margin: 30% 20px 0px; }
+    to {
+      margin-top: 0%; } } }
+
+.titulo {
+  font-family: "Dancing Script", sans-serif;
+  background-color: white; }
+  .titulo h4, .titulo h1 {
+    animation-name: a-titulo;
+    animation-duration: 1s; }
+
+@keyframes a-titulo {
+  from {
+    margin-left: 50%; }
+  to {
+    margin-left: 0%; } }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .titulo {
+    padding: 10px; } }
+
+@media only screen and (min-width: 768px) {
+  .titulo {
+    padding: 50px; } }
+
+/*index*/
+.color2 {
+  background-color: #C29772;
+  padding: 1rem; }
+
+.color1 {
+  background-color: white;
+  padding: 30px; }
+  .color1:hover {
+    transform: scale(1.05);
+    transition-duration: 1s; }
+
+.card-title {
+  font-family: "Ubuntu", sans-serif !important !important; }
+
+/*desayunos*/
+.caja1 {
+  background-color: #74678b52;
+  justify-content: center; }
+  .caja1 h5 {
+    color: black; }
+  .caja1 img {
+    border: solid 5px white;
+    padding: 0px !important; }
+    .caja1 img:hover {
+      transform: scale(1.05);
+      transition-duration: 1s; }
+
+.caja2 {
+  background-color: #a36f6f71;
+  justify-content: center; }
+  .caja2 h5 {
+    color: black; }
+  .caja2 img {
+    border: solid 5px white;
+    padding: 0px !important; }
+    .caja2 img:hover {
+      transform: scale(1.05);
+      transition-duration: 1s; }
+
+.caja3 {
+  background-color: #a3866f67;
+  justify-content: center; }
+  .caja3 h5 {
+    color: black; }
+  .caja3 img {
+    border: solid 5px white;
+    padding: 0px !important; }
+    .caja3 img:hover {
+      transform: scale(1.05);
+      transition-duration: 1s; }
+
+.caja4 {
+  background-color: #6fa38375;
+  justify-content: center; }
+  .caja4 h5 {
+    color: black; }
+  .caja4 img {
+    border: solid 5px white;
+    padding: 0px !important; }
+    .caja4 img:hover {
+      transform: scale(1.05);
+      transition-duration: 1s; }
+
+.boton {
+  font-family: "Dancing Script", sans-serif;
+  width: fit-content;
+  padding: 10px;
+  font-size: 30px;
+  border: none; }
+  .boton:hover {
+    background-color: #ac987c; }
+
+/*fiestas*/
+.titulo3 {
+  background-color: rgba(0, 0, 0, 0.562);
+  width: fit-content;
+  margin: auto;
+  padding: 20px; }
+
+/*recetas*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  /*index*/
+  .margen1 {
+    margin: 10px;
+    padding: 20px; }
+  .titulo2 {
+    font-family: "Dancing Script", sans-serif;
+    color: black; }
+  .borde {
+    border: solid 2px black;
+    margin: 20px; }
+  .seccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    justify-content: center; }
+  .div-img {
+    padding: 10px; }
+    .div-img img {
+      border-radius: 3% 3% 0% 0%;
+      height: 100%;
+      width: auto;
+      max-height: 250px; }
+  /*recetas*/
+  .tamaño {
+    max-width: 200px;
+    height: auto; }
+  .estilo {
+    margin: 10px; }
+    .estilo iframe {
+      width: 100%;
+      height: auto; }
+    .estilo:nth-child(1) {
+      background-color: rgba(149, 212, 162, 0.521); }
+    .estilo:nth-child(2) {
+      background-color: rgba(212, 170, 224, 0.541); }
+    .estilo:nth-child(3) {
+      background-color: rgba(229, 145, 201, 0.555); }
+  .color {
+    background-color: #755F4B;
+    color: white;
+    font-family: "Ubuntu", sans-serif !important !important;
+    padding: 10px; } }
+
+@media only screen and (min-width: 768px) {
+  /*index*/
+  .margen1 {
+    margin: 20px 0px;
+    padding: 40px; }
+  .titulo2 {
+    font-family: "Dancing Script", sans-serif;
+    color: black; }
+  .borde {
+    margin: 3rem;
+    padding: 3rem;
+    border: solid 2px black; }
+  .seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    justify-content: center; }
+  .div-img {
+    margin: auto;
+    padding: 10px; }
+    .div-img img {
+      border-radius: 3% 3% 0% 0%;
+      height: 100%;
+      width: auto;
+      max-height: 250px; }
+  /*recetas*/
+  .tamaño {
+    max-width: 400px;
+    height: auto; }
+  .estilo {
+    width: 60%;
+    margin: 60px auto;
+    padding: 20px; }
+    .estilo:nth-child(1) {
+      background-color: rgba(149, 212, 162, 0.521); }
+    .estilo:nth-child(2) {
+      background-color: rgba(212, 170, 224, 0.541); }
+    .estilo:nth-child(3) {
+      background-color: rgba(229, 145, 201, 0.555); }
+  .color {
+    background-color: #755F4B;
+    color: white;
+    font-family: "Ubuntu", sans-serif !important !important;
+    padding: 50px;
+    margin: 0px 50px; } }
+
+.fondo, .fondo2 {
+  background-color: #70a873;
+  margin-top: 30px;
+  margin-right: 0px; }
+
+.fondo2 {
+  margin-top: 50px; }

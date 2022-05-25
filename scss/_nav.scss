@@ -1,0 +1,60 @@
+.navbar-light {
+    background-color: $first-color !important;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .nav-link {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .navbar-nav a {
+        animation-name: a-nav;
+        animation-duration: 1s;
+        margin-top: 5px;
+    }
+
+    @keyframes a-nav {
+        from {
+            margin: 30% 20px 0px;
+        }
+        to {
+            margin-top: 5px;
+        }
+    }
+
+   
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .nav-link {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .navbar-nav a {
+        animation-name: a-nav;
+        animation-duration: 2s;
+        padding: 0.5rem 3rem !important;
+
+        &:hover {
+            text-shadow: 1px;
+            transform: scale(1.10);
+            transition-duration: 3s;
+        }
+    }
+
+    @keyframes a-nav {
+        from {
+            margin: 30% 20px 0px;
+        }
+        to {
+            margin-top: 0%;
+        }
+    }
+}

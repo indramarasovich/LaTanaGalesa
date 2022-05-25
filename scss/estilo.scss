@@ -1,0 +1,12 @@
+@import "variables";
+
+html {
+    font-family: $secondary-font;
+}
+
+@import "nav";
+@import "header";
+@import "main";
+@import "footer";
+
+
